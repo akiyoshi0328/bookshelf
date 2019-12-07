@@ -1,11 +1,12 @@
 <%= form_with model: book, local: true do |form| %>
+  <%= render "shared/errors", obj: book %>
   <div class="form-group">
     <%= form.label :title %>
     <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div class="form-group">
-  <%= form.label :newimage %>
+  <%= form.label :new_image %>
   <%= form.file_field :new_image , class: "form-control" %>
   </div>
 
